@@ -10,7 +10,7 @@
 - O princípio básico do MVC é a divisão da aplicação em três camadas: a camada de interação do usuário (view), a camada de manipulação dos dados (model) e a camada de controle (controller).
 
 
-# Quais os papéis de cada camada?
+## Quais os papéis de cada camada?
 
 
 Quando falamos sobre o MVC, cada uma das camadas apresenta geralmente as seguintes responsabilidades:
@@ -28,11 +28,26 @@ Quando falamos sobre o MVC, cada uma das camadas apresenta geralmente as seguint
 
 <p>É o componente chamado pelo cliente. O controller executa os seguintes passos: </p>
 
-- Prepara os dados que serão usados pelo
-model
+- Prepara os dados que serão usados pelo model
 
 - Chama o model
 
 - Prepara os dados que serão usados pela view
 
 - Direciona para a view
+
+## Design Pattern
+
+<strong>Design Pattern você terá vários benefícios dentre eles são: código mais enxuto, limpo, organizado, aumentar a qualidade e diminuir a complexidade do seu código. </strong>
+<br>
+<p> Foi utilizado : </p>
+
+- Front Controller : É implementado em diversos frameworks de ponta que são utilizados em diversos projetos de diferentes complexidades. Exemplo de dois frameworks que utilizam o padrão Front Controller é o Struts e o JSF, dois frameworks dos mais utilizados em projetos Java para aplicações que executam na Web. Entendendo o Front Controller e entendendo o funcionamento do padrão Command podemos entender muito melhor como ambos funcionam e como eles trabalham juntos para resolver problemas recorrentes nas aplicações Web.
+
+- Singleton : Permite criar objetos únicos para os quais há apenas uma instância. Este padrão oferece um ponto de acesso global, assim como uma variável global, porém sem as desvantagens das variáveis globais. Para entendermos e usarmos bem o padrão de Projeto Singleton é necessário apenas dominar bem as variáveis e métodos de classe estáticos além dos modificadores de acesso.
+
+
+- Template Method : O pattern template method é muito simples, é como se ele montasse o esqueleto de um algoritmo de uma forma abstrata, e deixasse para que as classes concretas realizem as devidas implementações. O Template Method utiliza uma classe abstrata base, que vai encapsular o template do algoritmo em um método, para que as classes concretas possam herdar desta classe e realizar a implementação de determinados passos deste algoritmo.
+
+
+
