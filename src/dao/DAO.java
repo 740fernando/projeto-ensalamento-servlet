@@ -35,7 +35,7 @@ public abstract class DAO<T> {
 	public void delete(T obj) throws DAOException{ //exlui objeto no bd
 		try{
 		   session.delete(obj);
-		}catch(HibernateException e ){
+		}catch(HibernateException e ){ //tradução de excessao- Troca uma excessao pela outra, toda vez que for lançado um HIbernateException, eu crio uma DAOEXCEPTION COM HIBERNATEEXCEPTION dentro dela
 			throw new DAOException(e);
 		}
 	}
