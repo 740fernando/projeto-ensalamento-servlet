@@ -9,6 +9,7 @@
 
 - O princípio básico do MVC é a divisão da aplicação em três camadas: a camada de interação do usuário (view), a camada de manipulação dos dados (model) e a camada de controle (controller).
 
+![alt text](https://github.com/740fernando/projeto-ensalamento-servlet/blob/master/assets/modeloMvc.png)
 
 ## Quais os papéis de cada camada?
 
@@ -43,6 +44,8 @@ Quando falamos sobre o MVC, cada uma das camadas apresenta geralmente as seguint
 <p> Foi utilizado : </p>
 
 - Front Controller : É implementado em diversos frameworks de ponta que são utilizados em diversos projetos de diferentes complexidades. Exemplo de dois frameworks que utilizam o padrão Front Controller é o Struts e o JSF, dois frameworks dos mais utilizados em projetos Java para aplicações que executam na Web. Entendendo o Front Controller e entendendo o funcionamento do padrão Command podemos entender muito melhor como ambos funcionam e como eles trabalham juntos para resolver problemas recorrentes nas aplicações Web.
+
+
 
 - Singleton : Permite criar objetos únicos para os quais há apenas uma instância. Este padrão oferece um ponto de acesso global, assim como uma variável global, porém sem as desvantagens das variáveis globais. Para entendermos e usarmos bem o padrão de Projeto Singleton é necessário apenas dominar bem as variáveis e métodos de classe estáticos além dos modificadores de acesso.
 
