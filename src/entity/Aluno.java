@@ -23,7 +23,5 @@ public class Aluno {
 	}
 	public void setSala(Sala sala) {
 		this.sala = sala;
-	}
-	
-	
+	}	
 }
