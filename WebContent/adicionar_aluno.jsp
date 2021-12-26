@@ -4,6 +4,10 @@
 <form action="AdicionarAluno.action" method="post">
 	<table>
 		<tr>
+			<td>Numero da matricula: </td>
+			<td><input type="text" name="matricula"></td>
+		</tr>	
+		<tr>
 			<td>Nome do aluno: </td>
 			<td><input type="text" name="nomeAluno"></td>
 		</tr>	

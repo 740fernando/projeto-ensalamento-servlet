@@ -20,10 +20,11 @@ public class AlunoService extends Service {
 			throw new ServiceException(e);
 		}		
 	}
-	public void adicionarAluno(String nome) throws ServiceException{
+	public void adicionarAluno(String matricula,String nome) throws ServiceException{
 		try{
 			AlunoDAO alunoDAO = daoFactory.getAlunoDAO();
 			Aluno aluno = new Aluno();
+			aluno.setMatricula(matricula);
 			aluno.setNome(nome);
 			alunoDAO.save(aluno);
 		}catch(DAOException e){
