@@ -5,10 +5,11 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.query.Query;
+import org.hibernate.Session;
 
 import util.HibernateUtil;
 
-import org.hibernate.Session;
+
 //Classe genérica- todas as classes de dao irao extender essa classe
 // é definida com generics para parametrizar o tipo de dados da classe
 public abstract class DAO<T> {
@@ -20,7 +21,6 @@ public abstract class DAO<T> {
 		session = HibernateUtil.getSession(); // obter uma referencia da sessao atual e atribuir ao atributo session
 		this.clazz=clazz;
 	}
-	@SuppressWarnings("unchecked")
 	public T load(Serializable id) throws DAOException{ //retorna a entidade com base no id
 		try{
 			return (T) session.load(clazz,id);

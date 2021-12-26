@@ -22,11 +22,11 @@ public class HibernateUtil {
 	}
 	public static void commitTransaction(){  // finaliza a transacao
 		Session session = getSession();
-		session.getTransaction();
+		session.getTransaction().commit();;
 	}
 	public static void rollbackTransaction(){ // finaliza a transacao com falha e desfaz o que foi feito anteriormente
 		Session session = getSession();
-		session.getTransaction().commit();
+		session.getTransaction().rollback();
 	}
 }
 // detalhe = o uso do sf.getCurrentSession , como eu configurei o hibernate.cfg.xml aquela propriedade para thread,

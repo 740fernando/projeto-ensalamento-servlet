@@ -18,7 +18,6 @@ actions = new Properties()  - Instancia o properties
 actionClass = Nome da classe
 
 */
-@WebServlet("/ControllerServlet")
 public class ControllerServlet extends HttpServlet {
 	
 	
