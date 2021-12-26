@@ -11,7 +11,7 @@ import entity.Sala;
 
 public class SalaService extends Service {
 	
-	// método para obter todas as salas do sistema
+	// método para obter todas as salas cadastradas no sistema
 	public List<Sala> getSalas() throws ServiceException{
 		try{
 			SalaDAO salaDAO =daoFactory.getSalaDAO();
