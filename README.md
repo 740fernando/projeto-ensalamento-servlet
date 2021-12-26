@@ -60,6 +60,15 @@ views
 pode ser usado para qualquer tipo de aplicação
 (web, desktop, dispositivos móveis, etc.)
 
+## O MVC e as Aplicações Web
+
+- O MVC pode ser aplicado para desenvolver
+qualquer tipo de aplicação
+- Quando a aplicação é web, o MVC se encaixa
+perfeitamente
+– O modo de funcionamento proposto pelo MVC
+e das aplicações web é muito similar
+
 ## Design Pattern
 
 <strong>Design Pattern você terá vários benefícios dentre eles são: código mais enxuto, limpo, organizado, aumentar a qualidade e diminuir a complexidade do seu código. </strong>
