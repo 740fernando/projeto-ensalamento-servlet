@@ -5,6 +5,9 @@ import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.query.Query;
+
+import util.HibernateUtil;
+
 import org.hibernate.Session;
 //Classe genérica- todas as classes de dao irao extender essa classe
 // é definida com generics para parametrizar o tipo de dados da classe
@@ -41,7 +44,7 @@ public abstract class DAO<T> {
 	}
 	protected List<?> list (String hql) throws DAOException { //metodo list- recebe um query como parametro
 		try{
-			Query q = session.createQuery(hql);
+			org.hibernate.query.Query q = session.createQuery(hql);
 			return q.list();
 		}catch(HibernateException e){
 			throw new DAOException(e);
