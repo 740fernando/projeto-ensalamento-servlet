@@ -32,7 +32,7 @@
 						<c:param name="matricula">${aluno.matricula}</c:param>
 					</c:url>
 					
-					<td align="center"><a href="${excluirUrl}">Excluir</a></td>
+					<td align="center"><a href="${excluirUrl}" onclick="return confirm('Deseja realmente excluir?');">Excluir</a></td>
 				</tr>	
 			</c:forEach>
 		</c:when>
