@@ -14,19 +14,19 @@
 	</table>
 </form>
 
-<c:if test="${alunos != null">
+<c:if test="${alunos != null}">
 	<BR>
 	<table border="1" style="width: 100%">
 	<c:choose>
 		<c:when test="${!empty(alunos)}">
 			<c:forEach var="aluno" items="${alunos}">
-				<c:url var=adicionarUrl" value="AdicionarAlunoSala.action">
+				<c:url var="adicionarUrl" value="AdicionarAlunoSala.action">
 					<c:param name="matricula">${aluno.matricula}</c:param>
 					<c:param name="numSala">${numSala}</c:param>
 				</c:url>
 				<tr>
 					<td>${aluno.matricula} - ${aluno.nome} </td>
-					<td><A href-"${adicionarUrl}">Adicionar</A></td>
+					<td><A href="${adicionarUrl}">Adicionar</A></td>
 				</tr>
 			</c:forEach>
 		</c:when>

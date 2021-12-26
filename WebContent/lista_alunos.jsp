@@ -42,3 +42,12 @@
 	</c:choose>
 </table>
 <br>
+<c:if test="${numAlunos < sala.capacidade}">
+	<c:url var="procurarUrl" value="ProcurarAluno.action">
+		<c:param name="numSala">${sala.numero}</c:param>
+	</c:url>
+	
+	<A href="${procurarUrl}">Adicionar alunos a sala</A>
+</c:if>
+
+<jsp:include page="footer.jsp" />
