@@ -25,7 +25,7 @@ Quando falamos sobre o MVC, cada uma das camadas apresenta geralmente as seguint
 - Esta divisão facilita a manutenção e extensão futura do código
 
 
-## Controller
+### Controller
 
 <p>É o componente chamado pelo cliente. O controller executa os seguintes passos: </p>
 
@@ -36,6 +36,29 @@ Quando falamos sobre o MVC, cada uma das camadas apresenta geralmente as seguint
 - Prepara os dados que serão usados pela view
 
 - Direciona para a view
+
+### View
+
+- É o resultado visual observado pelo cliente
+- O direcionamento para uma determinada
+view é responsabilidade do controller
+- Os dados presentes na view normalmente
+são renderizados com base em dados
+obtidos pelo model
+
+### Model
+
+- É onde está toda a lógica de negócio
+implementada pela aplicação
+- O model compreende implementação da
+lógica, acesso a bancos de dados, acesso a
+sistemas externos, etc.
+- O model não deve ter qualquer dependência
+com a tecnologia usada pelos controllers ou
+views
+- Esta independência garante que o mesmo model
+pode ser usado para qualquer tipo de aplicação
+(web, desktop, dispositivos móveis, etc.)
 
 ## Design Pattern
 
